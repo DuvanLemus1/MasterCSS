@@ -1,9 +1,73 @@
-body{
-    background: gray;
-}
+/*
+####### Selectores
+*/
 
-h1{
-    color: red;
-    font-size: 50px;
-    text-decoration: underline;
-}
+     /*Selector universal -- Selecciona y aplica un estilo css a todo el documento HTML*/
+    *{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    /*margin: 0px; /*margenes globales*/
+    /*padding: 0px; /*margenes internos de un elemento*/
+    
+    }
+
+     /*Selector de etiqueta --modifica el estilo de TODAS las etiquetas con ese nombre seleccionado*/
+    h1{
+        background: red; /*color de fondo*/
+        color: white;
+        padding: 10px; /*Genera un margin en px o % al elemento*/
+    }
+
+    a{
+        font-size: 20px;
+        color: chocolate;
+        text-decoration: none; /*modifica el estilo de decoracion por defecto, none quita todos los estilos*/
+
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    footer a{ /*Modificar los estilos de una etiqueta dentro de otra etiqueta*/
+        font-size: 25px;
+        color: coral;
+    }
+
+    /*Selector de id*/
+    #descripcion{
+        border: 2px solid yellowgreen;
+        padding: 10px;
+        
+    }
+
+    #descripcion h2{
+        color: tomato;
+    }
+
+    #titulo{ /*CSS permite la herencia de atributos y se lee de arriba a abajo*/
+        background: crimson;
+    }
+
+    #parrafo1{
+        border: 1px solid blue;
+        padding: 3px;
+    }
+
+
+    /*Selector de clase*/
+    .parrafosMultiples{
+        border: 1px solid cyan;
+        padding: 3px;
+        font-style: italic;
+        /*text-decoration: underline;*/
+        font-weight: bold;
+    }
+
+    .segundoParrafo{ /*Una clase dentro de otra clase permite heredar los atributos anteriores*/
+        background: red;
+        color: white;
+    }
+
+
+    /*Selector de atributo*/
